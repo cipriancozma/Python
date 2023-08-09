@@ -12,17 +12,23 @@ shift = int(input("Type the shift number:\n"))
 
 def caesar(text, shift, direction):
     newString = ''
+
     for letter in text:
         if shift > 26:
             shift = shift % alphabet.index(letter)
-            print(shift)
-        oldString = alphabet.index(letter)
-        if direction == 'encode':
-            newStringIdx = oldString + shift
-        elif direction == 'decode':
-            newStringIdx = oldString - shift
-        newString += alphabet[newStringIdx]
+        else:
+            if letter not in alphabet:
+                newString += letter
+            else:
+                oldString = alphabet.index(letter)
+                if direction == 'encode':
+                    newStringIdx = oldString + shift
+                elif direction == 'decode':
+                    newStringIdx = oldString - shift
+                newString += alphabet[newStringIdx]
+
     print(f"The {'encoded' if direction == 'encode' else 'decoded'} text is {newString}")
+
 
 caesar(text, shift, direction)
 
@@ -34,5 +40,3 @@ while user_response == 'yes':
     shift = int(input("Type the shift number:\n"))
     caesar(text, shift, direction)
     user_response = input("Do you want to restart the program?")
-
-
