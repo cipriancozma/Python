@@ -21,8 +21,8 @@ operations = {
     "/": divide
 }
 
-num1 = int(input("What's the first number?: "))
-num2 = int(input("What's the second number?: "))
+num1 = float(input("What's the first number?: "))
+num2 = float(input("What's the second number?: "))
 
 for key in operations:
     print(key)
