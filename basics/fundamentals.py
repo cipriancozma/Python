@@ -25,7 +25,22 @@ a = None
 # print(type(a))
 
 # Dictionaries
+dictionary = {
+    'a': 1,
+    'b': 2
+}
+# print(dictionary['a'])
+# print(dictionary.values())
 
+# Tuples - immutable lists
+my_tupple = (1, 2, 3, 4, 5)
+# print(my_tupple[1])
+
+# Sets
+my_set = { 1, 2, 3, 4, 5, 6, 5}
+list_set = [1, 2, 2, 3, 4, 5]
+# print(set(list_set))
+# print(my_set)
 
 # math functions
 # print(round(3.2))
@@ -103,3 +118,37 @@ new_sentence = sentence.join(['hello', 'my', 'name', 'is', 'ciprian'])
 a, b, c, *other = [1, 2, 3, 4, 5, 6]
 # print(a)
 # print(other)
+
+# dictionary methods
+user = {
+    'name': 'ciprian',
+    'greet': 'hello'
+}
+
+# print(user.get('age')) # instead of throwing an error by putting the age directly user['age'], if the user does not contain the age key it will print None
+
+# print('size' in user.keys())
+# print('hello' in user.values())
+# print(user.items())
+# print(user.clear())
+
+# tuple methods
+new_tuple = (4, 6, 8, 10)
+# tuple_var = new_tuple[1:2]
+# print(tuple_var)
+# print(new_tuple.count(4))
+# print(new_tuple.index(4))
+
+# set methods
+set_1 = { 1, 2, 3, 4, 5 }
+set_2 = {4, 5, 6, 7, 8, 9, 10}
+
+# print(my_set.difference(set_2))
+# print(my_set.discard(5))
+# print(set_1.difference_update(set_2))
+# print(set_1)
+# print(set_1.intersection(set_2))
+# print(set_1.isdisjoint(set_2))
+# print(set_1.union(set_2))
+# print(set_1.issubset(set_2))
+# print(set_1.issuperset(set_2))
