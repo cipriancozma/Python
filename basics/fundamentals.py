@@ -20,6 +20,13 @@ isValid = True
 li = [1, 2, 3, 5, True, 'a']
 # print(li)
 
+# None
+a = None
+# print(type(a))
+
+# Dictionaries
+
+
 # math functions
 # print(round(3.2))
 # print(abs(-3))
@@ -68,3 +75,31 @@ basket.remove(6)
 # basket.clear()
 # print(basket)
 
+# print(basket.index(2))
+
+basket_letters = ['a', 'b', 'c', 'd', 'e', 'c']
+
+# print(basket_letters.index('d'))
+
+# print('e' in basket_letters)
+
+# print(basket_letters.count('c'))
+
+# basket_letters.sort() # I can use also sorted() - it produces a new array
+# print(basket_letters)
+
+# sort and reverse
+new_list = sorted(basket_letters)
+new_list.reverse()
+# print(new_list)
+
+# print(list(range(1, 100)))
+
+sentence = ' '
+new_sentence = sentence.join(['hello', 'my', 'name', 'is', 'ciprian'])
+# print(new_sentence)
+
+# list unpacking
+a, b, c, *other = [1, 2, 3, 4, 5, 6]
+# print(a)
+# print(other)
